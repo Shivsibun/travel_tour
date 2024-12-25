@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings - Travel Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img2.jpg">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Travel Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="package.html">Package</a></li>
+                    <li><a href="hotel.html">Hotel-Bookings</a></li>
+                    <li><a href="flight.html">Flight-Bookings</a></li>
+                    <li><a href="booking.html">Packages-Bookings</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">ACCOUNT</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="bookings">
+        <div class="container">
+            <h2>Your Bookings</h2>
+            <p>Here are the details of your current bookings:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Phone Number</th>
+                        <th>Destination</th>
+                        <th>Booking Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="bookingTable">
+                    <tr>
+                        <td>joe</td>
+                        <td>9584388</td>
+                        <td>Paris</td>
+                        <td>15th January 2024</td>
+                        <td>Confirmed</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Book a New Trip</h3>
+
+            <form id="bookingForm">
+    <label for="name">Your Name:</label>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" value="+91" required>
+
+    <label for="destination">Choose a destination:</label>
+    <select id="destination" name="destination" required>
+        <option value="PARIS">PARIS</option>
+        <option value="SYDNEY">SYDNEY</option>
+        <option value="CANBERRA">CANBERRA</option>
+        <option value="LONDON">LONDON</option>
+        <option value="BANGALORE">BANGALORE</option>
+        <option value="OOTY">OOTY</option>
+        <option value="DELHI">DELHI</option>
+        <option value="JAIPUR">JAIPUR</option>
+    </select>
+    
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" name="date" required>
+    
+    <button type="submit">Book Now</button>
+</form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Travel Management System. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
